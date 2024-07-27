@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #299ED5;
+    padding: 20px;
+}
+
+.header__title {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.section__title {
+    font-weight: 700;
+    color: #299ED5;
+    margin-bottom: 20px;
+}
+
+/* Novedades Section */
+.novedades__title {
+    font-weight: 500;
+    color: #292C33;
+    margin-bottom: 10px;
+}
+
+/* Card Component */
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+}
+
+.card__content {
+    padding: 15px;
+}
+
+.card__date {
+    font-size: 0.875rem;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.card__title {
+    font-weight: 700;
+    color: #292C33;
+    margin-bottom: 10px;
+}
+
+.card__author {
+    font-size: 0.875rem;
+    color: #67C770;
+}
+
+/* Footer */
+.footer {
+    background-color: #299ED5;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer__text {
+    color: #fff;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .header__title {
+        font-size: 1.5rem;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        padding: 5px;
+    }
+}
