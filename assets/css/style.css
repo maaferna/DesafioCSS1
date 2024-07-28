@@ -235,7 +235,6 @@ body {
     font-size: 1.5rem;
 }
 
-
 .bg-red {
     background-color: #E93E30;    
 }
@@ -260,13 +259,13 @@ body {
     background-color: #563D7C;
 }
 
-@media (max-width: 992px) {
-    .grid-item--featured {
-        grid-column: span 12;
-    }
+/* Estilos para las categorías */
+.section__categorias .small-card__content .card__title {
+    color: #fff !important;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width:982px) {
     .header__title {
         font-size: 1.5rem;
     }
@@ -293,12 +292,17 @@ body {
 
     .small-card {
         flex-direction: column;
-    }
-
-    .small-card__image img {
-        width: 100%;
         height: auto;
     }
+
+    .small-card__image {
+        grid-column: 1 / span 6;
+    }
+
+    .small-card__content {
+        grid-column: 7 / span 6;
+    }
+
     .section--split {
         flex-direction: column;
     }
