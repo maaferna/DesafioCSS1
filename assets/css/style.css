@@ -100,7 +100,6 @@ body {
     justify-content: center;
 }
 
-
 .small-card__image img {
     width: auto;
     height: 100px;
@@ -123,7 +122,7 @@ body {
 
 .card__title {
     font-weight: 700;
-    color: #292C33;
+    color: #292C33 !important;
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
@@ -140,6 +139,65 @@ body {
     margin-right: 5px;
 }
 
+/* Segunda sección */
+.section--split {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__populares, .section__categorias {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 48%;
+}
+
+.section__categorias {
+    padding-left: 100px;
+}
+
+.popular-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.popular-cards .card {
+    flex: 1 1 calc(50% - 20px);
+}
+
+.small-card {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 50px;
+    overflow: hidden;
+    height: 100px;
+    margin-bottom: 20px; 
+}
+
+.small-card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small-card__content h4 {
+    margin: 0;
+    color: #fff;
+}
+
+.ver-todas {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #299ED5;
+    font-weight: 500;
+}
+
 /* Footer */
 .footer {
     background-color: #299ED5;
@@ -150,6 +208,30 @@ body {
 .footer__text {
     color: #fff;
     margin: 0;
+}
+
+.bg-red {
+    background-color: #E93E30;    
+}
+
+.bg-yellow {
+    background-color: #F7E018;
+}
+
+.bg-blue {
+   background-color: #299ED5; 
+}
+
+.bg-dark {
+    background-color: #292C33;
+}
+
+.bg-green {
+    background-color: #67C770;
+}
+
+.bg-purple {
+    background-color: #563D7C;
 }
 
 @media (max-width: 992px) {
@@ -191,5 +273,12 @@ body {
         width: 100%;
         height: auto;
     }
-}
+    .section--split {
+        flex-direction: column;
+    }
 
+    .section__populares, .section__categorias {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
